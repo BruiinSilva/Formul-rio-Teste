@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content=" Bruno Gomes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Trabalhando com Formulários</h1>
+    <hr />
+
+    <!-- Tag para formulário e Form-->
+    <!-- Local onde envia os formularios Action, só ver em Back end-->
+    <!-- Placeholder e um texto informativo-->
+    <!-- Br e usado pra quebra de linha-->
+    <!-- Maxlength-"10" o tanto que o usuário pode escrever e o min o minino que o numero vai-->
+    <!-- Value e onde vc quer qui começe o numero e Step vai de par  na contagem-->
+    <form> 
+        <label> Texto:</label><br  />
+        <input type=" text"  placeholder="Digite aqui um texto"/>
+        <br />
+        <br />
+        <label>Número:</label><br />
+        <input type="number" placeholder=" Informe um Número" min="18" value="20" step="2" required />
+        <br />
+        <br />
+        <label> E-mail:</label><br />
+        <input type="email" placeholder=" Informe seu emai" />
+        <br />
+        <br />
+        <label> Telefone </label><br />
+        <input type="tel" placeholder="(DDD) 9xxxx-xxxx" />
+        <br />
+        <br />
+        <label>Género</label><br />
+        <br />
+        <input type="radio" name="genero" value="masculino"/>Masculino<br />
+        <input type="radio" name="genero" value="feminino"/>Feminino<br />
+        <input type="radio" name="genero" value="Outro"/>Outro<br />
+        <br />
+        <label>Prêferencia da Área</label><br />
+        <br />
+        <input type="checkbox" name="area" value="Montagem" /> Montagem e manutenção de micro<br />
+        <input type="checkbox" name="area" value="java" /> Java<br />
+        <input type="checkbox" name="area" value="Html" /> Html <br />
+        <input type="checkbox" name="area" value="CSS" /> CSS<br />
+        <input type="checkbox" name="area" value="Javascript" /> Javascript<br />
+        <br />
+        <label>Grau de Escolaridade </label>
+        <select name="escolaridade">
+            <option value="fundamental"> Ensino Fundamental</option> 
+            <option value="Medio"> Ensino Medio</option> 
+            <option value="Superior"> Ensino Superior</option> 
+            <option value="Graduacao"> Graduacao</option> 
+        </select>
+        <br />
+        <br />
+        <label>Senha:</label><br />
+        <br />
+        <input type="passoword" placeholder=" Informe sua senha" minlength="8" />
+        <br />
+        <br />
+        <label> Comentários</label><br />
+        <textarea rows="8" cols="100"></textarea>
+        <!-- textarea e uma caixa para comentários-->
+        <label>Data:</label><br />
+        <input type="date" />
+        <br />
+        <br />
+        <!-- Range pode ser o nivel de satifação-->
+        <label> Nivel de satisfação:</label><br />
+        <input type="range" />
+        <br />
+        <br />
+        <label> Color:</label>
+        <input type="color" />
+        <br />
+        <br />
+        <button type=" submit"> Enviar</button>
+        <button type="sumit">Resetar</button>
+    </form>
+</body>
+</html>
